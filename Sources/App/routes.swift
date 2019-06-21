@@ -15,4 +15,5 @@ public func routes(_ router: Router) throws {
     // Example of configuring a controller
     let gitHubController = GitHubController()
     router.get("push", use: gitHubController.doStuff)
+    router.post("push", use: gitHubController.doStuff)
 }
